@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UENR Student Portal - Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,        
+        body{
+            width: 100%;
+            min-height: 100%;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8fbfd;
+            color: #213547;
+        }
+
+        .portal-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: 
+            radial-gradient(
+                circle at 30% 25%,
+                rgba(223, 244, 252, 0.5),
+                transparent 37%
+            ),
+            linear-gradient(
+                135deg,
+                #ffffff 0%,
+                #f7fbfd 45%,
+                #ffffff 100%  
+            );
+          overflow: hidden;
+        }
+
+        .top-header {
+            min-width: 125px;
+            max-width: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 28px clamp(40px, 7vw, 120px) 20px;
+            position: relative;
+            z-index: 20;
+            background-color: rgb(86, 80, 204);
+        }
+
+    .brand {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .brand-logo {
+        width: 62px;
+        height: 72px;
+        object-fit: contain;
+    }
+
+    .brand-title {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        line-height: 1;
+        font-weight: 700;
+        color:#033a30;
+    }
+    
+    .tagline-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 14px;
+    }
+
+    .tagline {
+        font-size: 16px;
+        color:#8290a2;
+        letter-spacing: .1px;
+    }
+
+    .tagline span {
+        margin:0px;
+        color:#032343;
+        padding:inherit
+    }
+
+    .tagline-line {
+        width: 74px;
+        height: 3px;
+        margin-top: 10px;
+        border-radius: 100px;
+        background: #328f4a;
+        }
+
+
+
+
+
+
+        .auth {
+            min-height:100vh;
+            display:grid;
+            justify-items:center;
+            align-content:start;
+            padding:0 0 32px;
+            background:var(--bg)
+        }
+
+
+.auth .card{
+    width:calc(100% - 32px);
+    max-width:420px;
+    padding:28px;
+    margin-top:-64px;
+    position:relative;
+    z-index:1;
+    border-top:4px solid var(--ac);
+    box-shadow:0 12px 32px rgba(0,0,0,.16)
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="portal-page">
+        <header class="top-header">
+            <div class="brand">
+                <img src="Uenr logo.png" alt="UENR logo" class="brand-logo"/>
+            <div>
+            <div class="brand-title">
+             <h4> UENR </h4>
+            </div>
+            <span class="brand-subtitle">
+                Student Portal
+            </span>
+            </div>
+            </div>
+<div class="tagline-wrapper">
+    <div class="tagline">
+        People
+        <span>|</span>
+        Energy
+        <span>|</span>
+        A Sustainable Future
+    </div>
+    <div class="tagline-line"></div>
+</div>
+        </header>
+    </div>
+
+<section class="auth" id="login">
+      <div class="card"><div class="logo">
+        </div><h1>Student Login</h1>
+    <p class="sub-t">Sign in to the UENR student portal</p>
+                <div class="fld"><label>Student ID</label><input id="lid" autocomplete="username">
+                </div>
+
+</body>
+</html>
